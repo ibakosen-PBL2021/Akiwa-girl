@@ -5,61 +5,59 @@
     <meta charset="UTF-8">
     <title>あきわが～る</title>
     <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
     <header>
-        <t>あきわが～る</t>
-      <nav class="nav">
-      </nav>
+        <h1 id="t">あきわが～る</h1>
     </header>
-    <p>現在の状況</p>
+    <p id="heading">現在の状況</p>
     <div class="box">
-      <h1>やや混雑</h1>
-      <div class="box2">
+      <div class="crowdedness"><h1>{{ crowdedness }}</h1></div>
+      <div class="crowd_icon">
+        {% if num > 10 %}
+          <img src="{% static 'home/images/triangle.png' %}">
+        {% endif %}
+      </div>
+    </div>
+    <div class="box2">
       <p>館内の混雑</p>
-      </div>
     </div>
-<br>
-<br>
-    <div class="box">
+    <div class="box_s">
       <h1>12/20席</h1>
-      <div class="box2">
+    </div>
+    <div class="box2">
       <p>閲覧席状況</p>
-      </div>
     </div>
-<br>
-    <p>図書館情報</p>
-    <br>
+    <p id="heading">図書館情報</p>
     <div class="box3">
-<h1>お知らせ</h1>
-</div>
-<div class="box">
-  <img src="{% static 'home/images/book.png' %}">
-  <h1>蔵書検索</h1>
-  </div>
-  <div class="box">
-    <img src="{% static 'home/images/pin.png' %}">
-    <h1>館内図</h1>
+      <h1>お知らせ</h1>
     </div>
-<hr >
+    <div class="box">
+      <img src="{% static 'home/images/book.png' %}">
+      <h1>蔵書検索</h1>
+    </div>
+    <div class="box">
+      <img src="{% static 'home/images/pin.png' %}">
+      <h1>館内図</h1>
+    </div>
     <footer>
-        <a href="../">
-            <img src="{% static 'home/images/home.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">ホーム</span>
-        </a>
-        <a href="../../../num/">
-            <img src="{% static 'home/images/number.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">館内人数</span>
-        </a>
-        <a href="../../../seat/">
-            <img src="{% static 'home/images/seats.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">空席情報</span>
-        </a>
-        <a href="../../../others/"></a>
-            <img src="{% static 'home/images/others.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">その他</span>
-        </a>
+      <a href="../">
+          <img src="{% static 'home/images/home.png' %}" width="50" height="50" alt="色玉"><br>
+          <span style="font-weight:bold;">ホーム</span>
+      </a>
+      <a href="../../../num/">
+          <img src="{% static 'home/images/number.png' %}" width="50" height="50" alt="色玉"><br>
+          <span style="font-weight:bold;">館内人数</span>
+      </a>
+      <a href="../../../seat/">
+          <img src="{% static 'home/images/seats.png' %}" width="50" height="50" alt="色玉"><br>
+          <span style="font-weight:bold;">空席情報</span>
+      </a>
+      <a href="../../../others/"></a>
+          <img src="{% static 'home/images/others.png' %}" width="50" height="50" alt="色玉"><br>
+          <span style="font-weight:bold;">その他</span>
+      </a>
     </footer>
   </body>
 </html>

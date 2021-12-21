@@ -1,53 +1,70 @@
-t {
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 0;
+  }
+  h1, p {
+    margin: 0 0;
+  }
+  #t {
     color:#FFFFFE;
-     font-size: 32px;
-     margin-right: auto;
-      margin-left: auto;
-  }
-  
-  p {
-      color:#000000;
-       font-size: 17px;
-  }
-  
-  h1 {
-    color: #FFFFFE;
-    font-size: 20px;
+    font-size: 2em;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
   }
-  
-  .box{width: 200px; 
-      margin: 5em　;
-      border: solid 3px #FFFFFE;
-      background-color: #2D334A;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    .box2{width: 200px; 
-      margin: 5em　;
-      border: solid 3px #FFFFFE;
-      background-color: #E3F6F5;
-    }
-  
-    .box3{width: 200px; 
-      margin: 5em　;
-      height: 300px;
-      border: solid 3px #FFFFFE;
-      background-color: #2D334A;
-    }
-  
-    header {
-      display: flex;
-      width: 100%;
-      height: 50px;
-      background-color: #2D334A;
-    }
-  
-    footer {
-      width: 100%;
-      height: 30px; 
-      text-align: center;
-      padding: 20px 0;
-    }
+  #heading {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .box{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFE;
+    text-align: center;
+    width: 250px;
+    background-color: #272343;
+    margin: 10px auto 0 auto;
+  }
+  .crowdedness h1{
+    margin: 10px auto;
+  }
+  .crowd_icon img{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+  }
+  .box_s{
+    color: #FFFFFE;
+    text-align: center;
+    width: 250px;
+    background-color: #272343;
+    margin: 10px auto 0 auto;
+  } 
+  .box2{
+    color: #000000;
+    text-align: center;
+    width: 250px; 
+    background-color: #E3F6F5;
+    margin: 0 auto 10px auto;
+  } 
+  .box2 p{
+    font-size: 1.3em;
+  }
+  .box3{width: 200px; 
+    margin: 5em;
+    height: 300px;
+    border: solid 3px #FFFFFE;
+    background-color: #2D334A;
+  } 
+  header {
+    width: 100%;
+    height: 3em;
+    background-color: #2D334A;
+  }
+  footer {
+    width: 100%;
+    height: 30px; 
+    text-align: center;
+    padding: 20px 0;
+  }
+}
