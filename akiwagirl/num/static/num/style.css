@@ -12,6 +12,74 @@
       margin-left: auto;
       text-align: center;
     }
+    .wrapper {
+      display: grid;
+      text-align: center;
+      margin: 0 2rem 0 2rem;
+      padding-top: 1rem;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      font-size: 1.5em;
+    }
+    .num_head {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: absolute;
+      margin: auto;
+    }
+    .number {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      display: absolute;
+      margin: auto;
+    }
+    .crowdedness {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: absolute;
+      margin: auto;
+    }
+    .crowd_icon {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      display: absolute;
+      margin: auto;
+    }
+    .crowd_icon img{
+      width: 4em;
+      height: 4em;
+    }
+
+    .wrapper2 {
+      display: grid;
+      text-align: center;
+      margin: 0 2rem 0 2rem;
+      padding-top: 1rem;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      font-size: 1.5em;
+    }
+    .expect_head {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .expect {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
     header {
       position: fixed;
       top: 0px;
