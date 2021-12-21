@@ -30,33 +30,46 @@
       <p>閲覧席状況</p>
     </div>
     <p id="heading">図書館情報</p>
-    <div class="box3">
-      <h1>お知らせ</h1>
+    <div class="wrapper">
+      <div class="info">
+        <p>お知らせ</p>
+      </div>
+      <div class="search">
+        <img src="{% static 'home/images/book.png' %}">
+        <p>蔵書検索</p>
+      </div>
+      <div class="map">
+        <img src="{% static 'home/images/pin.png' %}">
+        <p>館内図</p>
+      </div>
     </div>
-    <div class="box">
-      <img src="{% static 'home/images/book.png' %}">
-      <h1>蔵書検索</h1>
-    </div>
-    <div class="box">
-      <img src="{% static 'home/images/pin.png' %}">
-      <h1>館内図</h1>
-    </div>
-    <footer>
-      <a href="../">
-          <img src="{% static 'home/images/home.png' %}" width="50" height="50" alt="色玉"><br>
-          <span style="font-weight:bold;">ホーム</span>
-      </a>
-      <a href="../../../num/">
-          <img src="{% static 'home/images/number.png' %}" width="50" height="50" alt="色玉"><br>
-          <span style="font-weight:bold;">館内人数</span>
-      </a>
-      <a href="../../../seat/">
-          <img src="{% static 'home/images/seats.png' %}" width="50" height="50" alt="色玉"><br>
-          <span style="font-weight:bold;">空席情報</span>
-      </a>
-      <a href="../../../others/"></a>
-          <img src="{% static 'home/images/others.png' %}" width="50" height="50" alt="色玉"><br>
-          <span style="font-weight:bold;">その他</span>
+    <footer class="footer-menu">
+      <ul>
+        <li>
+          <a href="../">
+            <img src="{% static 'home/images/home.png' %}" width="50" height="50" alt="色玉">
+            <div>ホーム</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../num/">
+            <img src="{% static 'home/images/number.png' %}" width="50" height="50" alt="色玉">
+            <div>館内人数</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../seat/">
+            <img src="{% static 'home/images/seats.png' %}" width="50" height="50" alt="色玉">
+            <div>空席情報</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../others/">
+            <img src="{% static 'home/images/others.png' %}" width="50" height="50" alt="色玉">
+            <div>その他</div>
+          </a>
+        </li>
+      </ul>
       </a>
     </footer>
   </body>
