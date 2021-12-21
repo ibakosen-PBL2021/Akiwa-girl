@@ -4,35 +4,42 @@
   <head>
     <meta charset="UTF-8">
     <title>あきわが～る</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'seat/style.css' %}">
-
+    <link rel="stylesheet" type="text/css" href="{% static 'others/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
     <header>
-        <t>あきわが～る</t>
-      <nav class="nav">
-      </nav>
+      <h1 id="t">あきわが～る</h1>
     </header>
 
-<hr >
-    <!-- footer-->
-    <footer>
-        <a href="../">
-            <img src="{% static 'home/images/home.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">ホーム</span>
-        </a>
-        <a href="../../../num/">
-            <img src="{% static 'home/images/number.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">館内人数</span>
-        </a>
-        <a href="../../../seat/">
-            <img src="{% static 'home/images/seats.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">空席情報</span>
-        </a>
-        <a href="../../../others/"></a>
-            <img src="{% static 'home/images/others.png' %}" width="50" height="50" alt="色玉"><br>
-            <span style="font-weight:bold;">その他</span>
-        </a>
+    <footer class="footer-menu">
+      <ul>
+        <li>
+          <a href="../">
+            <img src="{% static 'others/images/home.png' %}" width="50" height="50" alt="色玉">
+            <div>ホーム</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../num/">
+            <img src="{% static 'others/images/number.png' %}" width="50" height="50" alt="色玉">
+            <div>館内人数</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../seat/">
+            <img src="{% static 'others/images/seats.png' %}" width="50" height="50" alt="色玉">
+            <div>空席情報</div>
+          </a>
+        </li>
+        <li>
+          <a href="../../../others/">
+            <img src="{% static 'others/images/others.png' %}" width="50" height="50" alt="色玉">
+            <div>その他</div>
+          </a>
+        </li>
+      </ul>
+      </a>
     </footer>
   </body>
 </html>
