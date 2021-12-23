@@ -16,25 +16,17 @@
         現在の館内人数
       </div>
       <div class="number">
-        {{ num.num }}人
+        {{ num }}人
       </div>
       <div class="crowdedness">
-        {% if num.num > 20 %}
-          混雑
-        {% elif num.num > 15 %}
-          やや混雑
-        {% elif num.num > 10 %}
-          やや快適
-        {% else %}
-          快適
-        {% endif %}
+        {{ crowdedness }}
       </div>
       <div class="crowd_icon">
-        {% if num.num > 20 %}
+        {% if num > 20 %}
           <img src="{% static 'num/images/cross.png' %}">
-        {% elif num.num > 15 %}
+        {% elif num > 15 %}
           <img src="{% static 'num/images/triangle_r.png' %}">
-        {% elif num.num > 10 %}
+        {% elif num > 10 %}
           <img src="{% static 'num/images/triangle.png' %}">
         {% else %}
           <img src="{% static 'num/images/circle.png' %}">
