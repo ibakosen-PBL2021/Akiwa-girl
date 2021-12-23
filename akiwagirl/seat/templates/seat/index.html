@@ -13,10 +13,13 @@
     </header>
     <div class="seats">
       {% for occ in occupancy %}
-        {% if occ.occupancy == True %}
-          <div id="seat_occ">{{ occ.id }}</div>
-        {% else %}
-          <div id="seat_unocc">{{ occ.id }}</div>
+        <div class={{occ.occupancy}} id={{occ.id}}>{{ occ.id }}</div>
+        {% if occ.id == 3 %}
+          <div class="table1"></div>
+        {% elif occ.id == 9 %}
+          <div class="table2"></div>
+        {% elif occ.id == 15 %}
+          <div class="table3"></div>
         {% endif %}
       {% endfor %}
     </div>
