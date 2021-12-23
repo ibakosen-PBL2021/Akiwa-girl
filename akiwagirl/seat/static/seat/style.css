@@ -12,6 +12,16 @@
       margin-left: auto;
       text-align: center;
     }
+    .seats {
+      display: flex;
+    }
+    #seat_unocc {
+      background-color: balck;
+    }
+    #seat_occ {
+      background-color: red;
+    }
+
     header {
       position: fixed;
       top: 0px;

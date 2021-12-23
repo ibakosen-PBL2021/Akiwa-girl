@@ -11,7 +11,15 @@
     <header>
       <h1 id="t">空席情報</h1>
     </header>
-
+    <div class="seats">
+      {% for occ in occupancy %}
+        {% if occ.occupancy == True %}
+          <div id="seat_occ">{{ occ.id }}</div>
+        {% else %}
+          <div id="seat_unocc">{{ occ.id }}</div>
+        {% endif %}
+      {% endfor %}
+    </div>
     <footer class="footer-menu">
       <ul>
         <li>
