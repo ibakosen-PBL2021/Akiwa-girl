@@ -11,6 +11,11 @@
     <header>
       <h1 id="t">空席情報</h1>
     </header>
+    <p id="heading">現在の使用数</p>
+    <div class="box_s">
+      <h1>12/20席</h1>
+    </div>
+    <p id="heading">現在の状況</p>
     <div class="seats">
       {% for occ in occupancy %}
         <div class={{occ.occupancy}} id={{occ.id}}>{{ occ.id }}</div>
@@ -22,6 +27,12 @@
           <div class="table3"></div>
         {% endif %}
       {% endfor %}
+    </div>
+    <div class="seat_info">
+      <div class="seat_occ"></div>
+      <div id="seat_occ">使用中</div>
+      <div class="seat_unocc"></div>
+      <div id="seat_unocc">空席</div>
     </div>
     <footer class="footer-menu">
       <ul>
