@@ -65,6 +65,10 @@
       height: 3em;
       background-color: #272343;
     }
+
+    #estimate-img {
+      margin: 1rem 2rem;
+    }
     .footer-menu {
       position: fixed;
       bottom: 0px;
