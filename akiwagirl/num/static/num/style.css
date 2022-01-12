@@ -65,8 +65,12 @@
       height: 3em;
       background-color: #272343;
     }
+    .estimate {
+      text-align: center;
+    }
 
-    #estimate-img {
+    .estimate #estimate-img {
+      width: 80%;
       margin: 1rem 2rem;
     }
     .footer-menu {
