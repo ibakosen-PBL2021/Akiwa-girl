@@ -45,7 +45,7 @@ trig.append(11)  #hidariue
 echo.append(13)
 
 import sqlite3
-con = sqlite3.connect('/home/romasw/Akiwa-girl/akiwagirl/db.sqlite3')
+con = sqlite3.connect('db.sqlite3')
 cur = con.cursor()
 occupancies = [0 for _ in range(18)]
 for i in range(4):
